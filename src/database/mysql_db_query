@@ -1,0 +1,27 @@
+/**************************/
+show TABLES;
+ 
+ 
+-- Table for NESTJS API
+ 
+CREATE TABLE usersnest (
+ user_id INT PRIMARY KEY,
+ first_name VARCHAR(40),
+ last_name VARCHAR(40),
+ email VARCHAR(40),
+ pass VARCHAR(40)
+);
+ 
+INSERT INTO usersnest VALUES(1, 'David', 'Wallace','david@gmail.com', 'david@123');
+INSERT INTO usersnest VALUES(2, 'first_name', 'last_name', 'email', 'pass');
+ 
+SELECT * FROM usersnest;
+SELECT * FROM users;
+ 
+drop table usersnest;
+ 
+ 
+Delete from usersnest where user_id = 6;
+ 
+ 
+SELECT * from usersnest where user_id = 1;
